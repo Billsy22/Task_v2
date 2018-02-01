@@ -16,6 +16,7 @@
 		1697DC1F2023C8DE00B604D5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC1E2023C8DE00B604D5 /* CoreDataStack.swift */; };
 		1697DC222023C93300B604D5 /* TaskCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC202023C93300B604D5 /* TaskCoreDataModel.xcdatamodeld */; };
 		1697DC252023CA7A00B604D5 /* Task+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC242023CA7A00B604D5 /* Task+Convenience.swift */; };
+		1697DC282023CC7200B604D5 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC272023CC7200B604D5 /* TaskController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1697DC1E2023C8DE00B604D5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		1697DC212023C93300B604D5 /* TaskCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		1697DC242023CA7A00B604D5 /* Task+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Convenience.swift"; sourceTree = "<group>"; };
+		1697DC272023CC7200B604D5 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				1697DC242023CA7A00B604D5 /* Task+Convenience.swift */,
+				1697DC272023CC7200B604D5 /* TaskController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1697DC282023CC7200B604D5 /* TaskController.swift in Sources */,
 				1697DC1A2023C7E000B604D5 /* TaskListTableViewController.swift in Sources */,
 				1697DC222023C93300B604D5 /* TaskCoreDataModel.xcdatamodeld in Sources */,
 				1697DC252023CA7A00B604D5 /* Task+Convenience.swift in Sources */,
