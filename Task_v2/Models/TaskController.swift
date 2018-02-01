@@ -21,11 +21,17 @@ class TaskController {
         return[task1, task2]
     }
     
+    // MARK: -  Initializer
+    init() {
+        self.tasks = fetchTask()
+    }
+    
     // MARK: -  CRUD
     
     // Add Task
     func add(taskWithName name: String, notes: String?, due: Date?) {
         _ = Task(name: name, notes: notes, due: due)
+        saveToPersistence()
     }
     
     // Update Existing Task
@@ -33,11 +39,13 @@ class TaskController {
         task.name = name
         task.notes = notes
         task.due = due
+        saveToPersistence()
     }
     
     // Delete Task
     func delete(task: Task) {
         task.managedObjectContext?.delete(task)
+        saveToPersistence()
     }
     
     // Save to Persistence
