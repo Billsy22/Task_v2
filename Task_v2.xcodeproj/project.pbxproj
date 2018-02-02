@@ -17,6 +17,7 @@
 		1697DC222023C93300B604D5 /* TaskCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC202023C93300B604D5 /* TaskCoreDataModel.xcdatamodeld */; };
 		1697DC252023CA7A00B604D5 /* Task+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC242023CA7A00B604D5 /* Task+Convenience.swift */; };
 		1697DC282023CC7200B604D5 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC272023CC7200B604D5 /* TaskController.swift */; };
+		1697DC2A2023DB2200B604D5 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697DC292023DB2200B604D5 /* DateHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1697DC212023C93300B604D5 /* TaskCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		1697DC242023CA7A00B604D5 /* Task+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Convenience.swift"; sourceTree = "<group>"; };
 		1697DC272023CC7200B604D5 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
+		1697DC292023DB2200B604D5 /* DateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		168A43F92023C71800D34BFA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1697DC292023DB2200B604D5 /* DateHelpers.swift */,
 				168A43E72023C60000D34BFA /* AppDelegate.swift */,
 				168A43EE2023C60000D34BFA /* Assets.xcassets */,
 				168A43F32023C60000D34BFA /* Info.plist */,
@@ -196,6 +199,7 @@
 				1697DC222023C93300B604D5 /* TaskCoreDataModel.xcdatamodeld in Sources */,
 				1697DC252023CA7A00B604D5 /* Task+Convenience.swift in Sources */,
 				168A43E82023C60000D34BFA /* AppDelegate.swift in Sources */,
+				1697DC2A2023DB2200B604D5 /* DateHelpers.swift in Sources */,
 				1697DC1D2023C82D00B604D5 /* TaskDetailTableViewController.swift in Sources */,
 				1697DC1F2023C8DE00B604D5 /* CoreDataStack.swift in Sources */,
 			);

@@ -42,5 +42,12 @@ class TaskListTableViewController: UITableViewController {
     // MARK: -  Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toTaskDetailVC" {
+            guard let toTaskDetailVC = segue.destination as? TaskDetailTableViewController else { return }
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let task = TaskController.shared.tasks[indexPath.row]
+            toTaskDetailVC.dueDateValue = task.due
+            toTaskDetailVC.task = task
+        }
     }
 }

@@ -15,11 +15,6 @@ class TaskController {
     
     static var shared = TaskController()
     var tasks: [Task] = []
-    var mockTasks: [Task] {
-        let task1 = Task(name: "Task One", notes: nil, due: nil)
-        let task2 = Task(name: "Task Two", notes: "We need to do...something", due: nil)
-        return[task1, task2]
-    }
     
     // MARK: -  Initializer
     init() {
@@ -55,6 +50,12 @@ class TaskController {
     
     // Load From Persistence
     func fetchTask() -> [Task] {
-        return mockTasks
+        let fetchRequest: NSFetchRequest<Task> = Task.fetchRequest()
+            do {
+                return try CoreDataStack.context.fetch(fetchRequest)
+            } catch {
+                print(error)
+                return []
+        }
     }
 }
